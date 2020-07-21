@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208270245835",
+    "firebase_url": "https://fycus-c5ebe.firebaseio.com",
+    "project_id": "fycus-c5ebe",
+    "storage_bucket": "fycus-c5ebe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208270245835:android:871daf7742954cc9ce004e",
+        "android_client_info": {
+          "package_name": "com.fycus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208270245835-g3rqhobeth80mcsjmjhj47imemkh73fe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fycus",
+            "certificate_hash": "ef86b452f2a82109f9c11bd5bacd947e0795a9e4"
+          }
+        },
+        {
+          "client_id": "208270245835-e7ni3d35i4olahc8ctovv5ec6bhkktdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBClVPs8O903kIYIZYsKzT45y9EkgCGhbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208270245835-e7ni3d35i4olahc8ctovv5ec6bhkktdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

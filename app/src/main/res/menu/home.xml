@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_my_card"
+        android:orderInCategory="100"
+        android:title="My Card"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_my_contacts"
+        android:orderInCategory="100"
+        android:title="My Contacts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_card_sent"
+        android:orderInCategory="100"
+        android:title="Card Sent"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_purchase_card"
+        android:orderInCategory="100"
+        android:title="Purchase Card"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_create_card"
+        android:orderInCategory="100"
+        android:title="Create Card"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_my_subscription"
+        android:orderInCategory="100"
+        android:title="My Subscription"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_faq"
+        android:orderInCategory="100"
+        android:title="FAQ"
+        app:showAsAction="never" />
+
+   <!-- <item
+        android:id="@+id/action_payment"
+        android:orderInCategory="100"
+        android:title="Payment"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>

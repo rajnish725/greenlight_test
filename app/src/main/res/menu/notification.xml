@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notification"
+
+        app:showAsAction="ifRoom"/>
+<!--<item
+        android:id="@+id/cartItem"
+        app:actionLayout="@layout/notification_cart"
+        app:showAsAction="ifRoom"
+        android:title="Notification" />
+
+    <item
+        android:id="@+id/filter"
+        app:actionLayout="@layout/notification_filter"
+        app:showAsAction="ifRoom"
+        android:title="Notification" />-->
+
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#076c4e</color>
+    <color name="colorPrimaryDark">#05553D</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="blue">#2d7df6</color>
+    <color name="background_color">#f6f9fe</color>
+    <color name="blue_lite">#3289bf</color>
+    <color name="yellow">#ffc602</color>
+    <color name="lite_yellow">#FAE18D</color>
+    <color name="green">#01a11b</color>
+    <color name="red">#ff0000</color>
+    <color name="grey_lite_border">#E4E3E3</color>
+    <color name="hintColor">#B6B6B6</color>
+    <color name="hover_color">#FFFF</color>
+    <color name="lightgray">#8E8E92</color>
+    <color name="white_light">#CECED1</color>
+    <color name="grey_lite">#E0E0E0</color>
+    <color name="grey_dark">#535353</color>
+    <color name="black">#000000</color>
+    <color name="lite_blue">#f3fbfe</color>
+    <color name="text_black">#4a4a4a</color>
+</resources>

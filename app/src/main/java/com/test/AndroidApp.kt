@@ -34,8 +34,7 @@ class AndroidApp : Application(), HasActivityInjector, HasSupportFragmentInjecto
 
 
         AppInjector.init(this)
-        //    FacebookSdk.sdkInitialize(this)
-        //Fresco.initialize(this)
+
 
 
     }

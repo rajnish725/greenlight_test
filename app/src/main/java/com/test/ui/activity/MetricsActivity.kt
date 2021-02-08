@@ -23,6 +23,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
+import java.lang.Exception
 import java.net.ConnectException
 
 
@@ -122,7 +123,7 @@ class MetricsActivity : BaseActivity(), View.OnClickListener, OnItemListener {
             //var check: Int
             CoroutineScope(Dispatchers.IO).launch {
                 //val loginDetails = LoginTableModel(username, password)
-                metricDatabase!!.loginDao().InsertData(mData)
+                metricDatabase!!.accessDao().InsertData(mData)
                 //  loginDatabase!!.loginDao().InsertDataM(mData.areaList!!.get(1))
                 Log.d(TAG, "setData: inserted ")
             }
@@ -143,7 +144,21 @@ class MetricsActivity : BaseActivity(), View.OnClickListener, OnItemListener {
                 onBackPressed()
             }
             R.id.txt_performance_zone -> {
-                getMetricsData()
+                try {
+                    metricDatabase = MetricDatabase.getDataseClient(mContext!!)
+                    CoroutineScope(Dispatchers.IO).launch {
+                        metricsModel = metricDatabase!!.accessDao().loadmetricData()
+                        Log.d(TAG, "setData: fetched ")
+                    }
+                } catch (e: Exception) {
+                    Log.d(TAG, "onClick: " + e.message)
+                }
+
+                 if (metricsModel != null) {
+                     setData(metricsModel)
+                 } else {
+                     getMetricsData()
+                 }
             }
             R.id.txt_list_header -> {
 

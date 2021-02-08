@@ -57,11 +57,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="searchColor">
-        <item name="android:textColorHint">@android:color/white</item>
-        <item name="android:editTextColor">@android:color/white</item>
-        <!-- your other custom widget styles -->
-    </style>
 
     <style name="OutlinedRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -74,9 +69,6 @@
     </style>
 
 
-    <style name="DialogTheme">
-        <item name="android:windowEnterAnimation">@anim/slide_left</item>
-        <item name="android:windowExitAnimation">@anim/slide_right</item>
-    </style>
+
 
 </resources>

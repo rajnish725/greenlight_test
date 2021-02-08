@@ -3,16 +3,17 @@ package com.test.roomDB
 import android.content.Context
 import androidx.room.*
 import com.test.models.MetricsModel
+import com.test.models.ListTypeConverter
 
 @Database(
     entities = [(MetricsModel::class)],
     version = 1,
     exportSchema = false
 )
-//@TypeConverters(ProductTypeConverters::class)
+@TypeConverters(ListTypeConverter::class)
 abstract class MetricDatabase : RoomDatabase() {
 
-    abstract fun loginDao(): DAOAccess
+    abstract fun accessDao(): DAOAccess
 
     companion object {
 

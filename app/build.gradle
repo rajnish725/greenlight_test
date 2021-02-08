@@ -8,7 +8,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.fycus"
+        applicationId "com.test"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -31,6 +31,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+
+    kotlin {
+        experimental {
+            coroutines 'enable'
+        }
+    }
 }
 
 dependencies {
@@ -50,16 +57,18 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofit"
     implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttp"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp"
+
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
-    // Dagger
+
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.navigation:navigation-fragment:2.2.1'
     implementation 'androidx.navigation:navigation-ui:2.2.1'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.2.1'
+
     kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
     kapt "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
     implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
@@ -71,19 +80,33 @@ dependencies {
     //images and download
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.hbb20:ccp:2.1.0'
-    implementation('com.github.JakeWharton:ViewPagerIndicator:2.4.1') {
+  /*  implementation('com.github.JakeWharton:ViewPagerIndicator:2.4.1') {
         exclude group: 'com.android.support'
         exclude module: 'appcompat-v7'
         exclude module: 'support-v4'
-    }
+    }*/
 
     /**
      * For managing request permission
      */
-    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
     //firebase
-    implementation 'com.google.firebase:firebase-messaging:20.2.3'
-    implementation 'com.github.bumptech.glide:glide:4.10.0'
-    kapt 'com.github.bumptech.glide:compiler:4.10.0'
+   // implementation 'com.google.firebase:firebase-messaging:20.2.3'
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // optional - Test helpers
+    testImplementation "androidx.room:room-testing:2.2.6"
+    implementation "androidx.room:room-runtime:2.2.6"
+
+    implementation 'androidx.room:room-runtime:2.2.6'
+    kapt 'androidx.room:room-compiler:2.2.6'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+   // implementation "androidx.room:room-coroutines:2.1.0"
+
+
+    annotationProcessor "com.google.dagger:dagger-android-processor:2.11"
 
 }

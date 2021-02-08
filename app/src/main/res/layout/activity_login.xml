@@ -71,7 +71,7 @@
                             android:singleLine="true"
                             android:inputType="textEmailAddress"
                             android:layout_marginBottom="@dimen/dp_2"
-                            android:background="@drawable/edt_round_corner"/>
+                            />
 
                         <EditText
                             android:id="@+id/edtPassword"
@@ -86,7 +86,7 @@
                             android:inputType="textPassword"
                             android:singleLine="true"
                             android:layout_marginBottom="@dimen/dp_2"
-                            android:background="@drawable/edt_round_corner"/>
+                           />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -129,7 +129,7 @@
                             android:id="@+id/tvSignUp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/sign_up"
+                            android:text="kh"
                             android:textStyle="bold"
                             android:layout_marginTop="@dimen/dp_20"
                             android:layout_marginBottom="@dimen/dp_10"/>
